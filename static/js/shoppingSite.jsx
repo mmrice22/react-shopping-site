@@ -3,6 +3,7 @@ function App() {
   // initial state is an empty object
   const [melons, setMelons] = React.useState({});
   
+  // useEffect is a React Hook that makes request to server at /api/melons/
   React.useEffect(() => {
     fetch("/api/melons")
       .then((response) => response.json())
