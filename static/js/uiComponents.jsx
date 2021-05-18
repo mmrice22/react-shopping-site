@@ -25,6 +25,8 @@ function AllMelonsPage(props) {
   const { melons } = props;
   const melonCards = [];
 
+
+
   for (const melon of Object.values(melons)) {
     const melonCard = (
       <MelonCard
